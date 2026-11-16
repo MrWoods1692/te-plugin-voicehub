@@ -179,6 +179,7 @@ node dev/verify-install.mjs
 - 搜索空：先 `node smoke.mjs <baseUrl>`，多数是站点侧音源没配
 - 能搜不能放：看日志 `取播放链接失败` 后面的 HTTP 状态；QQ 502 是上游问题，不是插件问题
 - 面板保存不了：地址必须是 http(s)，看提示里的原话
+- 日志里出现 `Plugin proxy request failed; direct fallback is disabled`：这是宿主把插件的网络请求交给它自己的代理通道了，和插件无关。应用设置的「连接与控制 → 网络代理」里，把代理模式改成「关闭（直连）」，或打开「允许直连回退」，重启应用即可。
 
 ## 九、离线自测
 

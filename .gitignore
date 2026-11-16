@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tep
+dev/screenshots/
+dev/*.png
+dev/_icon/
+dev/_probe*.json
+dev/_validate.mjs
+.DS_Store
